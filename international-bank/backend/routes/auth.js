@@ -9,6 +9,7 @@ const express = require('express');
 const router = express.Router();
 
 // Generate JWT Token
+//comment
 const generateToken = (userId) => {
   if (!process.env.JWT_SECRET) {
     console.error('JWT_SECRET is not configured');
