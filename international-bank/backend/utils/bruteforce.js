@@ -21,3 +21,4 @@ const bruteforceStrict = new ExpressBrute(store, {
 });
 
 module.exports = { bruteforce, bruteforceStrict };
+

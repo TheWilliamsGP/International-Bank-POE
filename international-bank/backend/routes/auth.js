@@ -8,8 +8,8 @@ const express = require('express');
 
 const router = express.Router();
 
-// Generate JWT Token (now includes jti + device/IP fingerprint)
-const generateToken = (userId, req) => {
+// Generate JWT Token
+const generateToken = (userId) => {
   if (!process.env.JWT_SECRET) {
     console.error('JWT_SECRET is not configured');
     throw new Error('Server configuration error: JWT secret missing');
